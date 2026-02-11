@@ -1,0 +1,4 @@
+scenario,level,probability,impact
+baseline,Low,15,Minimal economic disruption
+aggressive,High,78,Severe market volatility expected
+moderate,Medium,45,Moderate employment concerns
