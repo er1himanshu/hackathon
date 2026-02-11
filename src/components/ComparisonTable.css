@@ -1,0 +1,79 @@
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.comparison-table th {
+  background-color: #667eea;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.comparison-table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.comparison-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.metric-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.best-value {
+  background-color: #e7f5ff;
+  font-weight: 700;
+  color: #1971c2;
+  position: relative;
+}
+
+.best-badge {
+  color: #ffd93d;
+  margin-left: 5px;
+  font-size: 1.1em;
+}
+
+.table-legend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9em;
+  color: #666;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-star {
+  color: #ffd93d;
+  font-size: 1.2em;
+}
