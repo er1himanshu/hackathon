@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts'
 
 function SectorChart({ data }) {
   const sectorData = data
@@ -25,9 +25,9 @@ function SectorChart({ data }) {
           <YAxis label={{ value: 'Impact Score', angle: -90, position: 'insideLeft' }} />
           <Tooltip />
           <Legend />
-          <Bar dataKey="impact" fill="#667eea" name="Impact Score">
+          <Bar dataKey="impact" name="Impact Score">
             {sectorData.map((entry, index) => (
-              <rect key={`cell-${index}`} fill={getColor(entry.impact)} />
+              <Cell key={`cell-${index}`} fill={getColor(entry.impact)} />
             ))}
           </Bar>
         </BarChart>

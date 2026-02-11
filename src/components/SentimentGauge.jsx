@@ -1,7 +1,7 @@
 import './SentimentGauge.css'
 
 function SentimentGauge({ data }) {
-  const sentimentData = data.find(row => row.category === 'Sentiment')
+  const sentimentData = data.find(row => row.category === 'Sentiment' && row.metric === 'Public Support')
   const value = sentimentData ? parseFloat(sentimentData.value) : 0
 
   // Calculate the rotation for the needle (0-100 maps to -90 to 90 degrees)

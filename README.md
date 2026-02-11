@@ -15,7 +15,7 @@ A comprehensive React-based dashboard for economic policy analysis and forecasti
 
 ### Prerequisites
 
-- Node.js 16+ 
+- Node.js 18+ (LTS recommended)
 - npm or yarn
 
 ### Installation

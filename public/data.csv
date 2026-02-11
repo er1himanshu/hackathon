@@ -35,9 +35,9 @@ Inflation,Rate,2.9,Sep,Aggressive
 Inflation,Rate,2.9,Oct,Aggressive
 Inflation,Rate,3.0,Nov,Aggressive
 Inflation,Rate,3.0,Dec,Aggressive
-Sentiment,Public Support,68,,,
-Risk,Level,Medium,,,
-Risk,Score,5.2,,,
+Sentiment,Public Support,68,,
+Risk,Level,Medium,,
+Risk,Score,5.2,,
 Sector,Impact,45,,Technology
 Sector,Impact,62,,Healthcare
 Sector,Impact,38,,Finance

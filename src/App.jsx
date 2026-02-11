@@ -11,19 +11,45 @@ import ComparisonTable from './components/ComparisonTable'
 function App() {
   const [data, setData] = useState(null)
   const [selectedScenario, setSelectedScenario] = useState('Baseline')
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     fetch('/data.csv')
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load data file')
+        }
+        return response.text()
+      })
       .then(csv => {
         Papa.parse(csv, {
           header: true,
+          skipEmptyLines: true,
           complete: (results) => {
-            setData(results.data)
+            // Only fail if there are critical errors, not minor field mismatches
+            const criticalErrors = results.errors.filter(e => e.type === 'Delimiter' || e.code === 'UndetectableDelimiter')
+            if (criticalErrors.length > 0) {
+              console.error('CSV parsing errors:', criticalErrors)
+              setError('Failed to parse data file')
+            } else {
+              setData(results.data)
+            }
+          },
+          error: (error) => {
+            console.error('CSV parsing error:', error)
+            setError('Failed to parse data file')
           }
         })
       })
+      .catch(err => {
+        console.error('Error loading data:', err)
+        setError('Failed to load dashboard data')
+      })
   }, [])
+
+  if (error) {
+    return <div className="error">Error: {error}</div>
+  }
 
   if (!data) {
     return <div className="loading">Loading dashboard...</div>
