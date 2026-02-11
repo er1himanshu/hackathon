@@ -11,14 +11,6 @@ function App() {
   const [sectorData, setSectorData] = useState([])
   const [comparisonData, setComparisonData] = useState([])
 
-  useEffect(() => {
-    loadCSVData('/data/inflation-projection.csv', setInflationData)
-    loadCSVData('/data/sentiment.csv', setSentimentData)
-    loadCSVData('/data/risk-assessment.csv', setRiskData)
-    loadCSVData('/data/sector-impact.csv', setSectorData)
-    loadCSVData('/data/comparison.csv', setComparisonData)
-  }, [])
-
   const loadCSVData = (file, setter) => {
     Papa.parse(file, {
       download: true,
@@ -29,6 +21,14 @@ function App() {
       }
     })
   }
+
+  useEffect(() => {
+    loadCSVData('/data/inflation-projection.csv', setInflationData)
+    loadCSVData('/data/sentiment.csv', setSentimentData)
+    loadCSVData('/data/risk-assessment.csv', setRiskData)
+    loadCSVData('/data/sector-impact.csv', setSectorData)
+    loadCSVData('/data/comparison.csv', setComparisonData)
+  }, [])
 
   const currentSentiment = sentimentData.find(s => s.scenario === scenario) || {}
   const currentRisk = riskData.find(r => r.scenario === scenario) || {}
