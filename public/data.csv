@@ -1,0 +1,54 @@
+category,metric,value,month,scenario
+Inflation,Rate,2.5,Jan,Baseline
+Inflation,Rate,2.7,Feb,Baseline
+Inflation,Rate,2.9,Mar,Baseline
+Inflation,Rate,3.2,Apr,Baseline
+Inflation,Rate,3.4,May,Baseline
+Inflation,Rate,3.6,Jun,Baseline
+Inflation,Rate,3.8,Jul,Baseline
+Inflation,Rate,4.0,Aug,Baseline
+Inflation,Rate,4.1,Sep,Baseline
+Inflation,Rate,4.2,Oct,Baseline
+Inflation,Rate,4.3,Nov,Baseline
+Inflation,Rate,4.4,Dec,Baseline
+Inflation,Rate,2.5,Jan,Moderate
+Inflation,Rate,2.6,Feb,Moderate
+Inflation,Rate,2.8,Mar,Moderate
+Inflation,Rate,2.9,Apr,Moderate
+Inflation,Rate,3.0,May,Moderate
+Inflation,Rate,3.1,Jun,Moderate
+Inflation,Rate,3.2,Jul,Moderate
+Inflation,Rate,3.3,Aug,Moderate
+Inflation,Rate,3.3,Sep,Moderate
+Inflation,Rate,3.4,Oct,Moderate
+Inflation,Rate,3.4,Nov,Moderate
+Inflation,Rate,3.5,Dec,Moderate
+Inflation,Rate,2.5,Jan,Aggressive
+Inflation,Rate,2.5,Feb,Aggressive
+Inflation,Rate,2.6,Mar,Aggressive
+Inflation,Rate,2.7,Apr,Aggressive
+Inflation,Rate,2.7,May,Aggressive
+Inflation,Rate,2.8,Jun,Aggressive
+Inflation,Rate,2.8,Jul,Aggressive
+Inflation,Rate,2.9,Aug,Aggressive
+Inflation,Rate,2.9,Sep,Aggressive
+Inflation,Rate,2.9,Oct,Aggressive
+Inflation,Rate,3.0,Nov,Aggressive
+Inflation,Rate,3.0,Dec,Aggressive
+Sentiment,Public Support,68,,,
+Risk,Level,Medium,,,
+Risk,Score,5.2,,,
+Sector,Impact,45,,Technology
+Sector,Impact,62,,Healthcare
+Sector,Impact,38,,Finance
+Sector,Impact,55,,Manufacturing
+Sector,Impact,41,,Retail
+Scenario,GDP Growth,2.8,,Baseline
+Scenario,Unemployment,4.2,,Baseline
+Scenario,Inflation,4.4,,Baseline
+Scenario,GDP Growth,3.1,,Moderate
+Scenario,Unemployment,3.8,,Moderate
+Scenario,Inflation,3.5,,Moderate
+Scenario,GDP Growth,3.5,,Aggressive
+Scenario,Unemployment,3.2,,Aggressive
+Scenario,Inflation,3.0,,Aggressive

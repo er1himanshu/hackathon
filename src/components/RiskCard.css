@@ -1,0 +1,68 @@
+.risk-card-content {
+  padding: 20px;
+}
+
+.risk-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: white;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+
+.risk-details {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.risk-level {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.risk-score {
+  font-size: 1em;
+  color: #666;
+}
+
+.risk-score strong {
+  color: #333;
+}
+
+.risk-indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.indicator-label {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: 500;
+}
+
+.indicator-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.indicator-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
