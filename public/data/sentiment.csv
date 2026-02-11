@@ -1,0 +1,4 @@
+scenario,score,label
+baseline,65,Positive
+aggressive,42,Neutral
+moderate,58,Positive
